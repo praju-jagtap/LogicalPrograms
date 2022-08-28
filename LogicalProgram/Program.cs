@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1.FibonacciSeries \n2.Perfect Number");
+            Console.WriteLine("1.FibonacciSeries \n2.Perfect Number \n3.Prime Number");
             Console.WriteLine("Please Enter Your Choice : ");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -16,6 +16,10 @@
                 case 2:
                     PerfectNo perfectNo = new PerfectNo();
                     perfectNo.Perfect();
+                    break;
+                case 3:
+                    PrimeNo primeNo = new PrimeNo();
+                    primeNo.Prime();
                     break;
                 
                 default:
