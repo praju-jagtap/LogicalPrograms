@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1.FibonacciSeries \n2.Perfect Number \n3.Prime Number \n4.Reverse Number \n5.Temperature Conversion");
+            Console.WriteLine("1.FibonacciSeries \n2.Perfect Number \n3.Prime Number \n4.Reverse Number \n5.Temperature Conversion \n6.Monthly Payment");
             Console.WriteLine("Please Enter Your Choice : ");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -29,7 +29,11 @@
                     Temperatur temperatur = new Temperatur();
                     temperatur.convert();
                     break;
-                
+                case 6:
+                    MonthlyPayment monthlyPayment = new MonthlyPayment();
+                    monthlyPayment.Payment();
+                    break;
+
                 default:
                     break;
             }

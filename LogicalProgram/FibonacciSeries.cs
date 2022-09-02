@@ -8,7 +8,7 @@ namespace LogicalProgram
 {
     internal class FibonacciSeries
     {
-        int firstNum = 0, secondNum = 1, thirdNum = 0, i;
+        int firstNum = 0, secondNum = 1, thirdNum = 0;
         public void Fibonacci()
         {
             Console.Write("\n");
